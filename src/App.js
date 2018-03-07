@@ -12,7 +12,7 @@ class App extends Component {
 
   /**
    * Creates an instance of App.
-   * @param {any} props 
+   * @param {any} props
    * @memberof App
    */
   constructor(props) {
@@ -24,10 +24,10 @@ class App extends Component {
     this.addToDo = this.addToDo.bind(this);
     this.handleChange = this.handleChange.bind(this);
   }
-  
+
   /**
    * Updates todo array with added item and sets item to empty string
-   * @param {any} event 
+   * @param {any} event
    * @memberof App
    */
   addToDo(event) {
@@ -37,10 +37,10 @@ class App extends Component {
       item: ''
     }));
   }
-  
+
   /**
    * Updates state with value in input field
-   * @param {any} event 
+   * @param {any} event
    * @memberof App
    */
   handleChange(event) {
@@ -55,7 +55,10 @@ class App extends Component {
     return (
       <div className="app">
         <div className="app-header">
-          <img src={logo} className="app-logo" alt="logo" />
+          {/*<img src={logo} className="app-logo" alt="logo" />*/}
+          <h1><a target="_blank"
+              href="https://medium.com/backticks-tildes/testing-your-react-component-with-jest-and-enzyme-276eef45bea0">
+              Testing Your React Component With Jest and Enzyme</a></h1>
           <h2>A Simple ToDo App</h2>
         </div>
 
